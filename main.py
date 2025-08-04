@@ -46,7 +46,7 @@ def buat_soal(level):
         if operasi == "/":
             angka1 = angka1 * angka2
     
-    soal = f"Berapa hasil dari {angka1} {operasi} {angka2}?"
+    soal = f"Berapa hasil dari {angka1} {operasi} {angka2}? = "
     jawaban_benar = eval(f"{angka1}{operasi}{angka2}") # Gunakan eval untuk menghitung ekspresi string
     
     return soal, jawaban_benar
@@ -127,7 +127,7 @@ def menu_utama():
         elif pilihan == "2":
             tampilkan_high_score()
         elif pilihan == "3":
-            print("Sampai jumpa!")
+            print("Terimakasih. Sampai jumpa!")
             break
         else:
             print("Pilihan tidak valid. Silakan coba lagi.")
